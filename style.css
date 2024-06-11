@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box1 {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+#timer {
+  color: #323238;
+  font-size: 7rem;
+  font-style: normal;
+
+  display: flex;
+  justify-content: center;
+
+  /* background-color: blue; */
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 25px;
+  /* background-color: rebeccapurple; */
+}
+
+#controls button {
+  border: none;
+  background-color: transparent;
+  fill: black;
+}
+
+.box2 {
+  /* background-color: red;
+  display: flex; */
+}
+
+.box3 {
+  /* margin-right: 20px;
+  margin-left: 20px; */
+}
+
+.ph {
+  font-size: 2rem;
+
+  background-color: #007bff;
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.ph:hover {
+  transform: scale(1.2);
+}
+
+#controls2 {
+  display: flex;
+  justify-content: center;
+
+  gap: 2rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#controls2 button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.running .ph-play-circle,
+.running .ph-timer,
+html:not(.running) .ph-pause-circle {
+  display: none;
+}

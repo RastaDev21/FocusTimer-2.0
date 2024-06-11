@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="pt-br" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temporizador estilo pomodoro" />
+
+    <title>Focus Timer 2.0 - Pomodoro</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="src/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="box1">
+        <div id="app">
+          <section id="timer">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+          </section>
+
+          <section id="controls">
+            <button
+              data-action="toggleRunning"
+              class="ph ph-play-circle"
+            ></button>
+            <button
+              data-action="toggleRunning"
+              class="ph ph-pause-circle"
+            ></button>
+            <button
+              data-action="toggleRunning"
+              class="ph ph-stop-circle"
+            ></button>
+            <button data-action="addMinutes" class="ph ph-plus-circle"></button>
+            <button
+              data-action="subMinutes"
+              class="ph ph-minus-circle"
+            ></button>
+          </section>
+        </div>
+        <div class="box2">
+          <section id="controls2">
+            <button>
+              <img
+                class="ph-tree"
+                data-action="soundTree"
+                src="./assets/Card 01.svg"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="ph-cloud-snow"
+                data-action="soundRain"
+                src="./assets/Card 02.svg"
+                alt=""
+              />
+            </button>
+
+            <div class="box3">
+              <button>
+                <img
+                  class="ph-storefront"
+                  data-action="soundCoffeeShop"
+                  src="./assets/Card 03.svg"
+                  alt=""
+                />
+              </button>
+              <button>
+                <img
+                  class="ph-campfire"
+                  data-action="soundFireplace"
+                  src="./assets/Card 04.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
